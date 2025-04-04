@@ -110,6 +110,7 @@ double my_list::get_score(string t_name) {
 
 int my_list::remove_a_node(string t_name) {
     node* t;
+    if (head == tail) return 0;
     for (t = head; t != NULL; t = t->link) {
         if (t->link->name == "Kim") {
             break;

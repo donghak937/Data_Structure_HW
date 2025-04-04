@@ -13,8 +13,6 @@ void my_sort(int *list, int start, int end){
     int j = end;
 
     while(j >= i){
- 
-
         while(i <= end && list[i] > list[pivot]){
             i++;
         }
@@ -31,8 +29,6 @@ void my_sort(int *list, int start, int end){
             list[i] = list[j];
             list[j] = temp;
         }
-
-       
     }
     
     my_sort(list, start, j-1);
