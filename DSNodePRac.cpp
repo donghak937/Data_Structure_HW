@@ -33,7 +33,9 @@ public:
 
     double score_sum();
     double get_score(string t_name);
+    int count_high_score();
     int remove_a_node(string t_name);
+    void insert_a_node(string t_name, node t);
 };
 my_list::my_list()
 {
@@ -121,6 +123,29 @@ int my_list::remove_a_node(string t_name) {
     t->link = t->link->link;
     delete temp;
     return 1;   
+}
+
+double my_list::score_sum() {
+    node* t;
+    double total = 0;
+    for (t = head; t != NULL; t = t->link) //여기가 어려움
+        if(t->score >= 80) total++;
+    return total;
+}
+
+void my_list::insert_a_node(string t_name, node t) {
+    node* a;
+    if (head == tail) return;
+    for (a = head; a != NULL; a = a->link) {
+        if (a->link->name == "Kim") {
+            break;
+        }
+        else if (a->link == NULL) return;
+    }
+    t.link = a->link;
+    a->link = a->link->link;
+    //delete temp;
+
 }
 
 
