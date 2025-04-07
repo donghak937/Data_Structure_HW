@@ -69,7 +69,14 @@ void my_list::insert_a_node(string tname, node t)
         if (a->name == tname) {
             break;
         }
-        else if (a->link == NULL) return;
+        else if (a->link == NULL){
+            node* temp = new node;
+            *temp = t;
+             temp->link = head;
+             head = temp;
+             return;
+
+        }
     }
 
     node* temp = new node;
@@ -77,6 +84,7 @@ void my_list::insert_a_node(string tname, node t)
 
     temp->link = a->link;
     a->link = temp;
+    return;
 }
 
 
