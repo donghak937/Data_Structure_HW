@@ -7,6 +7,7 @@
         "istream": "cpp",
         "string": "cpp",
         "dsnodeprac": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "ostream": "cpp"
     }
 }

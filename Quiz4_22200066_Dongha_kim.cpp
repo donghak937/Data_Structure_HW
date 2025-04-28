@@ -85,7 +85,6 @@ void my_list::insert_a_node(string tname, node t)
 
     node* temp = new node;
     *temp = t;
-
     temp->link = a->link;
     a->link = temp;
     return;

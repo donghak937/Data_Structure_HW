@@ -120,7 +120,7 @@ int my_list::remove_a_node(string t_name) {
         else if (t->link == NULL) return 0;
     }
     node* temp = t->link;
-    t->link = t->link->link;
+    t->link = temp->link;
     delete temp;
     return 1;   
 }
