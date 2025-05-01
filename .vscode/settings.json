@@ -8,6 +8,7 @@
         "string": "cpp",
         "dsnodeprac": "cpp",
         "xutility": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "xiosbase": "cpp"
     }
 }
