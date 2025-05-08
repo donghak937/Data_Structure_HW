@@ -33,6 +33,6 @@ int main(){
 }
 
 void addCafe(Cafe &r1)
-    getline(Cin, r1.name);
+    //getline(Cin, r1.name);
 
     r1.menu_list = new Menu[r1.menu_size];
