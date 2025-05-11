@@ -100,6 +100,7 @@ void My_heap::adjust(int a){
 }
 
 int main() {
-    
+    My_heap h;
+    h.insert_heap();
     return 0;
 }
