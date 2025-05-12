@@ -102,5 +102,5 @@ void My_heap::adjust(int a){
 int main() {
     My_heap h;
     h.insert_heap();
-    return 0;
+    return 0; //이게 된다고
 }
